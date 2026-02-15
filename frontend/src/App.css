@@ -1,36 +1,47 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import "tailwindcss";
+
+:root{
+    --color-blue-navy: #374151;
+    --color-gray:#6B7280;
+    --color-blue:#1E3A8A;
+    --color-light:#F0FFDF;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.bg-background {
+    background-color: var(--color-blue-navy);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-login {
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-position: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.bg-header {
+    background-color: var(--color-blue);
+}
+
+.title {
+    color:var(--color-gray);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.error{
+    color: red;
+    font-size: 16px;
+    padding: 10px 5px;
+}
+
+.remember{
+    font-size: 14px;
+    color: var(--color-gray);
+}
+
+.remember:hover{
+   color:black;
 }
 
 .card {
