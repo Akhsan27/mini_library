@@ -5,6 +5,7 @@ import Login from './pages/login';
 import Register from './pages/register';
 import Dashboard from './pages/admin/dashboard';
 import BookManagement from './pages/admin/bookmanagement'
+import MemberPage from './pages/admin/member';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Route path="/register" element={<Register/>}/>
       <Route path="/dashboard" element={<Dashboard/>}/>
       <Route path="/management-buku" element={<BookManagement/>}/>
+      <Route path="/member" element={<MemberPage/>}/>
     </Routes>
   )
 }

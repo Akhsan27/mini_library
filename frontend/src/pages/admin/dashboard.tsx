@@ -1,4 +1,8 @@
 import Header from "../../components/header";
+import StatCard from "../../components/statcard";
+import Card from "../../components/card";
+import ListItem from "../../components/listitem";
+import AlertItem from "../../components/alertitem";
 
 const Dashboard = () => {
   return (
@@ -54,33 +58,4 @@ export default Dashboard;
 
 /* ===== Komponen Pendukung ===== */
 
-const StatCard = ({ title, value }) => (
-  <div className="bg-white rounded-2xl shadow p-6">
-    <p className="text-gray-500 text-sm">{title}</p>
-    <h2 className="text-3xl font-bold mt-2">{value}</h2>
-  </div>
-);
 
-const Card = ({ title, children, className = "" }) => (
-  <div className={`bg-white rounded-2xl shadow p-6 ${className}`}>
-    <h3 className="text-lg font-semibold mb-4">{title}</h3>
-    {children}
-  </div>
-);
-
-const ListItem = ({ title, subtitle }) => (
-  <li className="flex justify-between items-center border-b pb-2">
-    <span className="font-medium">{title}</span>
-    <span className="text-sm text-gray-500">{subtitle}</span>
-  </li>
-);
-
-const AlertItem = ({ name, book, days }) => (
-  <li className="flex justify-between items-center bg-red-50 p-3 rounded-lg">
-    <div>
-      <p className="font-medium">{name}</p>
-      <p className="text-sm text-gray-500">Buku: {book}</p>
-    </div>
-    <span className="text-red-600 font-semibold">{days}</span>
-  </li>
-);
