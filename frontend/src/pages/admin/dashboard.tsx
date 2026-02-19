@@ -56,6 +56,4 @@ const Dashboard = () => {
 
 export default Dashboard;
 
-/* ===== Komponen Pendukung ===== */
-
 
