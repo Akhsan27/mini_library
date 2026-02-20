@@ -1,6 +1,6 @@
 function header() {
     return(
-        <div className="w-screen">
+        <div className="">
             <div className="flex justify-between items-center px-6 py-5 bg-header">
                 <div className="text-white text-xl font-bold">
                     MINI PERPUSTAKAAN

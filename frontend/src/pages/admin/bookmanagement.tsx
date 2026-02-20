@@ -1,11 +1,8 @@
-import Header from "../../components/header";
 import BookRow from "../../components/bookrows";
 
 const BookManagement = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      <Header />
-
       <div className="p-6 space-y-6">
 
         {/* Header Halaman */}

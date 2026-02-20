@@ -1,4 +1,3 @@
-import Header from "../../components/header";
 import StatCard from "../../components/statcard";
 import MemberRow from "../../components/memberrows";
 
@@ -24,8 +23,6 @@ const MemberPage = () => {
 
   return (
     <div>
-      <Header />
-
       {/* Statistik */}
       <div className="grid grid-cols-4 gap-4 my-6">
         <StatCard title="Total Anggota" value="120" />
