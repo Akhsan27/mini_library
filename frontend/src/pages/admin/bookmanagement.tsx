@@ -7,15 +7,15 @@ const BookManagement = () => {
 
         {/* Header Halaman */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <h1 className="text-2xl font-bold">Manajemen Buku</h1>
+          <h1 className="lg:text-xl font-bold">Manajemen Buku</h1>
 
           <div className="flex gap-3">
             <input
               type="text"
               placeholder="Cari buku..."
-              className="border rounded-lg px-4 py-2 w-64"
+              className="border rounded-lg px-4 text-sm py-2 w-64"
             />
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-lg">
+            <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg">
               + Tambah Buku
             </button>
           </div>
@@ -24,7 +24,7 @@ const BookManagement = () => {
         {/* Tabel Buku */}
         <div className="bg-white rounded-2xl shadow overflow-hidden">
           <table className="w-full text-left">
-            <thead className="bg-gray-50">
+            <thead className="bg-gray-50 text-sm">
               <tr>
                 <th className="p-4">Judul</th>
                 <th className="p-4">Penulis</th>
@@ -35,7 +35,7 @@ const BookManagement = () => {
               </tr>
             </thead>
 
-            <tbody>
+            <tbody className="text-sm">
               <BookRow
                 title="Laskar Pelangi"
                 author="Andrea Hirata"

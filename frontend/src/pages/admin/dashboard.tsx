@@ -14,7 +14,7 @@ const Dashboard = () => {
           <StatCard title="Total Anggota" value="342" />
           <StatCard title="Peminjaman Aktif" value="89" />
         </div>
-        <hr className="text-gray-500"/>
+        <div className="border-t border-gray-400 my-3"></div>
 
         {/* ===== Grid Konten ===== */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

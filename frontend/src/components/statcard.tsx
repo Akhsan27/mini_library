@@ -4,9 +4,9 @@ interface StatCardProps{
 }
 
 const StatCard = ({ title, value }:StatCardProps) => (
-  <div className="bg-blue-300 rounded-xl shadow p-6">
-    <p className="text-gray-800 text-sm monsterrat">{title}</p>
-    <h2 className="text-2xl font-bold mt-2">{value}</h2>
+  <div className="hover-grow bg-gray-300 rounded-sm  shadow-2xs  p-4">
+    <p className="text-gray-900 font-semibold text-sm monsterrat">{title}</p>
+    <h2 className="text-2xl text-blue-500 font-bold mt-2">{value}</h2>
   </div>
 );
 
