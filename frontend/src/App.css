@@ -9,10 +9,13 @@ body{
 }
 
 :root{
-    --color-blue-navy: #374151;
+    --color-blue-navy: #0B2D72;
     --color-gray:#6B7280;
-    --color-blue:#1E3A8A;
-    --color-light:#F0FFDF;
+    --color-blue:#0992C2;
+    --color-light:#F7F8F0;
+    --color-lightblue:#0AC4E0;
+    --color-lightyellow:#ffe605;
+    --color-red:#fa5204;
 }
 
 .bg-background {
@@ -77,4 +80,29 @@ body{
 .hover-grow:hover {
   transform: scale(1.01);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.411);
+}
+
+.btn-edit{
+    background-color: var(--color-lightblue);
+    border-color: 1px solid black;
+    border-radius: 10px;
+    border-radius: 5px;
+    margin:3px 4px;
+    transition-duration: 0.2s;
+}
+
+.btn-edit:hover{
+    background-color: var(--color-blue);
+    transition-duration: 0.2s;
+    color:var(--color-light)
+}
+
+.btn-delete{
+    background-color: var(--color-red);
+    border-radius: 5px;
+    transition-duration: 0.2s;
+}
+
+.btn-delete:hover{
+    background-color:var(--color-gray);
 }

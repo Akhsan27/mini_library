@@ -35,10 +35,10 @@ const MemberPage = () => {
       <div className="bg-white shadow rounded-lg p-4">
         <h2 className="text-lg font-bold mb-4">Data Anggota</h2>
 
-        <table className="w-full text-left">
+        <table className="w-full text-left text-sm">
           <thead>
-            <tr className="border-b">
-              <th className="py-2">Nama</th>
+            <tr className="border-b text-gray-700 border-gray-400">
+              <th className="py-2 ">Nama</th>
               <th>Kontak</th>
               <th>Total Pinjam</th>
               <th>Denda</th>

@@ -13,7 +13,7 @@ const BookManagement = () => {
             <input
               type="text"
               placeholder="Cari buku..."
-              className="border rounded-lg px-4 text-sm py-2 w-64"
+              className="border border-gray-400 focus:border-blue-500 outline-0 focus:ring-1  rounded-lg px-4 text-sm py-2 w-64"
             />
             <button className="bg-blue-600 text-white text-sm px-4 py-2 rounded-lg">
               + Tambah Buku

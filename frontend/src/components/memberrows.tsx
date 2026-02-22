@@ -10,7 +10,7 @@ type MemberRowProps = {
 
 const MemberRow = ({ name, contact, status, totalBorrow, fine }: MemberRowProps) => {
   return (
-    <tr className="border-b">
+    <tr className="border-b border-gray-400">
       <td className="py-2">{name}</td>
       <td>{contact}</td>
       <td>{totalBorrow}</td>

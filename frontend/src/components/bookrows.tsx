@@ -24,10 +24,10 @@ const BookRow = ({ title, author, category, stock, status }:BookRowProps) => (
       </span>
     </td>
     <td className="p-4 text-center space-x-2">
-      <button className="bg-yellow-400 px-3 py-1 rounded">
+      <button className="btn-edit px-3 py-1 rounded">
         Edit
       </button>
-      <button className="bg-red-500 text-white px-3 py-1 rounded">
+      <button className="btn-delete text-white px-3 py-1 rounded">
         Hapus
       </button>
     </td>
