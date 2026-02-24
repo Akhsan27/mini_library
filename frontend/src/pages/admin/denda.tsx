@@ -1,5 +1,5 @@
-import Header from "../../components/header";
 import { useState } from "react";
+import Title from "../../components/title";
 
 /* ===== Interface ===== */
 interface Fine {
@@ -59,11 +59,11 @@ const FinePage = () => {
       <div className="p-6 space-y-6">
 
         {/* Header */}
-        <h1 className="text-2xl font-bold">Denda & Pembayaran</h1>
+        <Title>Denda & Pembayaran</Title>
 
         {/* Tabel Denda */}
         <div className="bg-white rounded-2xl shadow overflow-hidden">
-          <table className="w-full text-left">
+          <table className="w-full text-left roboto text-sm">
             <thead className="bg-gray-50">
               <tr>
                 <th className="p-4">Anggota</th>
@@ -104,7 +104,7 @@ const FinePage = () => {
                     {!fine.paid && fine.amount > 0 && (
                       <button
                         onClick={() => handlePaid(fine.id)}
-                        className="bg-blue-600 text-white px-3 py-1 rounded"
+                        className="bg-blue-300 text-blue-900 hover:bg-blue-400 px-3 py-1 rounded"
                       >
                         Tandai Lunas
                       </button>

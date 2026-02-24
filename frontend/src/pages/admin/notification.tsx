@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Title from "../../components/title";
 
 /* ===== Interface ===== */
 interface Reminder {
@@ -61,10 +62,7 @@ const NotificationPage = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <div className="p-6 space-y-6">
-
-        <h1 className="text-2xl font-bold">
-          Notifikasi & Pengumuman
-        </h1>
+      <Title>Notifikasi & Pengumuman</Title>
 
         {/* ===== Reminder Jatuh Tempo ===== */}
         <div className="bg-white shadow overflow-hidden">
@@ -74,7 +72,7 @@ const NotificationPage = () => {
             </h2>
           </div>
 
-          <table className="w-full text-left">
+          <table className="w-full text-left text-sm roboto">
             <thead className="bg-gray-50">
               <tr>
                 <th className="p-4">Anggota</th>

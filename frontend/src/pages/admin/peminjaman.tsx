@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Title from "../../components/title";
 import type { Borrowing } from "../../components/borrowing";
 
 const BorrowPage = () => {
@@ -53,41 +54,39 @@ const BorrowPage = () => {
       <div className="p-6 space-y-6">
 
         {/* Header */}
-        <h1 className="text-2xl font-bold">
-          Peminjaman & Pengembalian
-        </h1>
+        <Title>Peminjaman</Title>
 
         {/* ===== Form Peminjaman Baru ===== */}
-        <div className="bg-white p-6 rounded-2xl shadow space-y-4">
-          <h2 className="text-lg font-semibold">
+        <div className="bg-white p-6 rounded-xl shadow space-y-4 monsterrat">
+          <h2 className="font-semibold">
             Input Peminjaman Baru
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid text-sm md:grid-cols-3 gap-4">
             <input
               type="text"
               placeholder="Nama Anggota"
-              className="border p-2 rounded-lg"
+              className="border border-gray-400 p-2 rounded-lg outline-0 focus:border-gray-800"
             />
             <input
               type="text"
               placeholder="Judul Buku"
-              className="border p-2 rounded-lg"
+              className="border border-gray-400 p-2 rounded-lg outline-0 focus:border-gray-800"
             />
             <input
               type="date"
-              className="border p-2 rounded-lg"
+              className="border border-gray-400 p-2 rounded-lg outline-0 focus:border-gray-500"
             />
           </div>
 
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg">
+          <button className="bg-blue-300 hover:bg-blue-500 text-white px-4 py-2 text-sm rounded-lg">
             Simpan Peminjaman
           </button>
         </div>
 
         {/* ===== Tabel Peminjaman ===== */}
-        <div className="bg-white rounded-2xl shadow overflow-hidden">
-          <table className="w-full text-left">
+        <div className="bg-white rounded-2xl  shadow overflow-hidden">
+          <table className="w-full text-left text-sm roboto">
             <thead className="bg-gray-50">
               <tr>
                 <th className="p-4">Anggota</th>
@@ -103,7 +102,6 @@ const BorrowPage = () => {
               {borrowings.map((item) => {
                 const fine = calculateFine(item.dueDate);
                 const isLate = fine > 0;
-
                 return (
                   <tr key={item.id} className="border-t">
                     <td className="p-4">{item.member}</td>
@@ -113,7 +111,6 @@ const BorrowPage = () => {
                     <td className="p-4 font-semibold">
                       {fine > 0 ? `Rp ${fine}` : "-"}
                     </td>
-
                     <td className="p-4">
                       <span
                         className={`px-3 py-1 rounded-full text-sm ${
@@ -125,7 +122,6 @@ const BorrowPage = () => {
                         {isLate ? "Terlambat" : "Aktif"}
                       </span>
                     </td>
-
                     <td className="p-4 text-center space-x-2">
                       <button
                         onClick={() => handleReturn(item.id)}
