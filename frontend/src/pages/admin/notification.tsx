@@ -120,7 +120,7 @@ const NotificationPage = () => {
 
         {/* ===== Pengumuman ===== */}
         <div className="bg-white p-6 rounded-2xl shadow space-y-4 max-w-xl">
-          <h2 className="text-lg font-semibold">
+          <h2 className="title-notifikasi">
             Kirim Pengumuman ke Anggota
           </h2>
 

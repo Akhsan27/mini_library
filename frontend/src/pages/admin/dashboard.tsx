@@ -2,6 +2,9 @@ import StatCard from "../../components/statcard";
 import Card from "../../components/card";
 import ListItem from "../../components/listitem";
 import AlertItem from "../../components/alertitem";
+import ImgUser from "../../assets/imguser.png"
+import ImgBook from "../../assets/imgbook.png"
+import ImgBorrow from "../../assets/imgborrowbook.png"
 
 const Dashboard = () => {
   return (
@@ -10,9 +13,9 @@ const Dashboard = () => {
 
         {/* ===== Statistik ===== */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <StatCard title="Total Buku" value="1,245" />
-          <StatCard title="Total Anggota" value="342" />
-          <StatCard title="Peminjaman Aktif" value="89" />
+          <StatCard title="Total Buku" value="1,245" image={ImgBook} color="bg-green-400" />
+          <StatCard title="Total Anggota" value="342" image={ImgUser} color="bg-red-500" />
+          <StatCard title="Peminjaman Aktif" value="89" image={ImgBorrow} color="bg-yellow-500"/>
         </div>
         <div className="border-t border-gray-400 my-3"></div>
 

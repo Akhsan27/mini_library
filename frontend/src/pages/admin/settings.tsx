@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Title from "../../components/title";
 
 /* ===== Interface ===== */
 interface SystemSettings {
@@ -38,9 +39,7 @@ const SettingsPage = () => {
       <div className="p-6 space-y-6 max-w-2xl">
 
         {/* Header */}
-        <h1 className="text-2xl font-bold">
-          Pengaturan Sistem
-        </h1>
+        <Title>Pengaturan Sistem</Title>
 
         {/* Card Pengaturan */}
         <div className="bg-white p-6 rounded-2xl shadow space-y-5">
