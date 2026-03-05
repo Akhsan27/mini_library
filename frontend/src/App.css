@@ -22,6 +22,11 @@ body{
     --color-red:#fa5204;
 }
 
+.bg-sidebar {
+    background: #89bae0;
+    background: linear-gradient(131deg, rgba(137, 186, 224, 1) 19%, rgba(23, 136, 150, 1) 51%, rgba(11, 69, 94, 1) 81%);
+}
+
 .bg-background {
     background-color: var(--color-blue-navy);
 }

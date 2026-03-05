@@ -1,4 +1,5 @@
 import BookRow from "../../components/bookrows";
+import Title from "../../components/title";
 
 const BookManagement = () => {
   return (
@@ -7,8 +8,7 @@ const BookManagement = () => {
 
         {/* Header Halaman */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <h1 className="lg:text-xl font-bold">Manajemen Buku</h1>
-
+        <Title>Manajemen Buku</Title>
           <div className="flex gap-3">
             <input
               type="text"
@@ -22,7 +22,7 @@ const BookManagement = () => {
         </div>
 
         {/* Tabel Buku */}
-        <div className="bg-white rounded-2xl shadow overflow-hidden">
+        <div className="bg-white shadow overflow-hidden">
           <table className="w-full text-left">
             <thead className="bg-gray-50 text-sm">
               <tr>
@@ -56,6 +56,13 @@ const BookManagement = () => {
                 category="Sejarah"
                 stock="5"
                 status="Tersedia"
+              />
+              <BookRow
+                title="Bumi Keranjang"
+                author="Pramoedya Ananta Toer"
+                category="Sejarah"
+                stock="5"
+                status="Tidak Tersedia"
               />
             </tbody>
           </table>

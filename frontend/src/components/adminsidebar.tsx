@@ -7,13 +7,13 @@ const menu = [
   { name: "Peminjaman", path: "/admin/borrow" },
   { name: "Denda & Pembayaran", path: "/admin/fines" },
   { name: "Notifikasi", path: "/admin/notification" },
-  { name: "Pengaturan Sitem", path: "/admin/settings" },
+  { name: "Pengaturan Sistem", path: "/admin/settings" },
 ];
 
 const AdminSidebar = () => {
   return (
-    <aside className="w-64 min-h-screen bg-gray-900 text-white p-5">
-      <h1 className="text-xl font-bold mb-8">Admin Perpustakaan</h1>
+    <aside className="w-64 min-h-screen bg-sidebar text-white p-5">
+      <h1 className="text-xl font-bold mb-8 roboto">Mini Perpustakaan</h1>
 
       <nav className="space-y-2">
         {menu.map((item) => (

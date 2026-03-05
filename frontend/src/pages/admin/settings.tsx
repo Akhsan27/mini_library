@@ -42,11 +42,11 @@ const SettingsPage = () => {
         <Title>Pengaturan Sistem</Title>
 
         {/* Card Pengaturan */}
-        <div className="bg-white p-6 rounded-2xl shadow space-y-5">
+        <div className="bg-white p-6 rounded-2xl  text-sm shadow-md space-y-5">
 
           {/* Batas Maksimal Pinjam */}
           <div>
-            <label className="block font-medium mb-1">
+            <label className="blockmb-1">
               Batas Maksimal Pinjam Buku
             </label>
             <input
