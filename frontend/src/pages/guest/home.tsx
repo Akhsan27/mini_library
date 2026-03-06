@@ -3,8 +3,7 @@ import book1 from "../../assets/buku/book1.jpg";
 import book2 from "../../assets/buku/book2.jpg";
 import book3 from "../../assets/buku/book3.jpg";
 import book4 from "../../assets/buku/book4.jpg";
-import Header from "../../components/header";
-
+import Navbar from "../../components/navbar";
 import StatCard from "../../components/statcard";
 import ImgBook from "../../assets/imgbook.png";
 import Title from "../../components/title";
@@ -15,9 +14,9 @@ import BookCard from "../../components/bookcard";
 const Home = () => {
   return (
     <div className="font-sans">
-      <Header />
+      <Navbar/>
       {/* HERO SECTION */}
-      <section className="bg-blue-50 py-20 px-8">
+      <section className="bg-blue-50 pt-24 px-9">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10">
           <div>
             <Title>Temukan Buku Disini</Title>
